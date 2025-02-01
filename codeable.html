@@ -1,0 +1,2447 @@
+<!DOCTYPE html>
+<html class="w-mod-js wf-ibmplexmono-n4-active wf-active w-mod-ix">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style>
+    .wf-force-outline-none[tabindex="-1"]:focus {
+      outline: none;
+    }
+  </style>
+  <title>Coneable - Conviértete en el desarrollador de software‍ que el mundo necesita</title>
+  <meta content="Coneable es el mejor instituto digital de desarrollo de software de Latinoamérica." name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <style data-tippy-stylesheet="">
+    .tippy-box[data-animation=fade][data-state=hidden] {
+      opacity: 0
+    }
+
+    [data-tippy-root] {
+      max-width: calc(100vw - 10px)
+    }
+
+    .tippy-box {
+      position: relative;
+      background-color: #333;
+      color: #fff;
+      border-radius: 4px;
+      font-size: 14px;
+      line-height: 1.4;
+      white-space: normal;
+      outline: 0;
+      transition-property: transform, visibility, opacity
+    }
+
+    .tippy-box[data-placement^=top]>.tippy-arrow {
+      bottom: 0
+    }
+
+    .tippy-box[data-placement^=top]>.tippy-arrow:before {
+      bottom: -7px;
+      left: 0;
+      border-width: 8px 8px 0;
+      border-top-color: initial;
+      transform-origin: center top
+    }
+
+    .tippy-box[data-placement^=bottom]>.tippy-arrow {
+      top: 0
+    }
+
+    .tippy-box[data-placement^=bottom]>.tippy-arrow:before {
+      top: -7px;
+      left: 0;
+      border-width: 0 8px 8px;
+      border-bottom-color: initial;
+      transform-origin: center bottom
+    }
+
+    .tippy-box[data-placement^=left]>.tippy-arrow {
+      right: 0
+    }
+
+    .tippy-box[data-placement^=left]>.tippy-arrow:before {
+      border-width: 8px 0 8px 8px;
+      border-left-color: initial;
+      right: -7px;
+      transform-origin: center left
+    }
+
+    .tippy-box[data-placement^=right]>.tippy-arrow {
+      left: 0
+    }
+
+    .tippy-box[data-placement^=right]>.tippy-arrow:before {
+      left: -7px;
+      border-width: 8px 8px 8px 0;
+      border-right-color: initial;
+      transform-origin: center right
+    }
+
+    .tippy-box[data-inertia][data-state=visible] {
+      transition-timing-function: cubic-bezier(.54, 1.5, .38, 1.11)
+    }
+
+    .tippy-arrow {
+      width: 16px;
+      height: 16px;
+      color: #333
+    }
+
+    .tippy-arrow:before {
+      content: "";
+      position: absolute;
+      border-color: transparent;
+      border-style: solid
+    }
+
+    .tippy-content {
+      position: relative;
+      padding: 5px 9px;
+      z-index: 1
+    }
+  </style>
+  <link href="./assets/coneable.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/" rel="preconnect">
+  <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="anonymous">
+  <style>
+    body,
+    p,
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    span {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+
+    #dec-text-wrapper-1,
+    #dec-text-wrapper-2,
+    .#dec-text-wrapper-3,
+    .#dec-text-wrapper-4 {
+      opacity: 0
+    }
+  </style>
+  <style type="text/css">
+    div.eapps-widget {
+      position: relative
+    }
+
+    div.eapps-widget.eapps-widget-show-toolbar:before {
+      position: absolute;
+      content: "";
+      display: block;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      pointer-events: none;
+      border: 1px solid transparent;
+      transition: border .3s ease;
+      z-index: 1
+    }
+
+    .eapps-widget-toolbar {
+      position: absolute;
+      top: -32px;
+      left: 0;
+      right: 0;
+      display: block;
+      z-index: 99999;
+      padding-bottom: 4px;
+      transition: all .3s ease;
+      pointer-events: none;
+      opacity: 0
+    }
+
+    .eapps-widget:hover .eapps-widget-toolbar {
+      opacity: 1;
+      pointer-events: auto
+    }
+
+    .eapps-widget-toolbar a {
+      text-decoration: none;
+      box-shadow: none !important
+    }
+
+    .eapps-widget-toolbar-panel {
+      border-radius: 6px;
+      background-color: #222;
+      color: #fff;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -ms-flex-align: center;
+      align-items: center;
+      top: 0;
+      position: relative;
+      transition: all .3s ease;
+      opacity: 0;
+      overflow: hidden;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .2);
+      height: 28px
+    }
+
+    .eapps-widget:hover .eapps-widget-toolbar-panel {
+      opacity: 1
+    }
+
+    .eapps-widget-toolbar-panel-wrapper {
+      width: 100%;
+      position: relative
+    }
+
+    .eapps-widget-toolbar-panel-only-you {
+      position: absolute;
+      top: -24px;
+      font-size: 11px;
+      line-height: 14px;
+      color: #9c9c9c;
+      padding: 5px 4px
+    }
+
+    .eapps-widget-toolbar-panel-logo {
+      width: 28px;
+      height: 28px;
+      border-right: 1px solid hsla(0, 0%, 100%, .2);
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: center;
+      justify-content: center
+    }
+
+    .eapps-widget-toolbar-panel-logo svg {
+      display: block;
+      width: 15px;
+      height: 15px;
+      fill: #f93262
+    }
+
+    .eapps-widget-toolbar-panel-edit {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 9px;
+      border-right: 1px solid hsla(0, 0%, 100%, .2);
+      color: #fff;
+      text-decoration: none
+    }
+
+    .eapps-widget-toolbar-panel-edit-icon {
+      width: 14px;
+      height: 14px;
+      margin-right: 8px
+    }
+
+    .eapps-widget-toolbar-panel-edit-icon svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      fill: #fff
+    }
+
+    .eapps-widget-toolbar-panel-views {
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center
+    }
+
+    .eapps-widget-toolbar-panel-views-label {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px;
+      margin-left: 8px
+    }
+
+    .eapps-widget-toolbar-panel-views-bar {
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      width: 70px;
+      height: 3px;
+      border-radius: 2px;
+      margin-left: 8px;
+      background-color: hsla(0, 0%, 100%, .3)
+    }
+
+    .eapps-widget-toolbar-panel-views-bar-inner {
+      border-radius: 2px;
+      background-color: #4ad504
+    }
+
+    .eapps-widget-toolbar-panel-views-green .eapps-widget-toolbar-panel-views-bar-inner {
+      background-color: #4ad504
+    }
+
+    .eapps-widget-toolbar-panel-views-red .eapps-widget-toolbar-panel-views-bar-inner {
+      background-color: #ff4734
+    }
+
+    .eapps-widget-toolbar-panel-views-orange .eapps-widget-toolbar-panel-views-bar-inner {
+      background-color: #ffb400
+    }
+
+    .eapps-widget-toolbar-panel-views-percent {
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      margin-left: 8px;
+      margin-right: 8px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px
+    }
+
+    .eapps-widget-toolbar-panel-views-get-more {
+      padding: 9px 16px;
+      background-color: #f93262;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 400;
+      border-radius: 0 6px 6px 0
+    }
+
+    .eapps-widget-toolbar-panel-share {
+      position: absolute;
+      top: 0;
+      display: inline-block;
+      margin-left: 8px;
+      width: 83px;
+      height: 28px;
+      padding-bottom: 4px;
+      box-sizing: content-box !important
+    }
+
+    .eapps-widget-toolbar-panel-share:hover .eapps-widget-toolbar-panel-share-block {
+      opacity: 1;
+      pointer-events: all
+    }
+
+    .eapps-widget-toolbar-panel-share-button {
+      padding: 0 18px;
+      height: 28px;
+      background-color: #1c91ff;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 400;
+      border-radius: 6px;
+      position: absolute;
+      top: 0;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      cursor: default;
+      -ms-flex-align: center;
+      align-items: center
+    }
+
+    .eapps-widget-toolbar-panel-share-button svg {
+      display: inline-block;
+      margin-right: 6px;
+      fill: #fff;
+      position: relative;
+      top: -1px
+    }
+
+    .eapps-widget-toolbar-panel-share-block {
+      position: absolute;
+      background: #fff;
+      border: 1px solid hsla(0, 0%, 7%, .1);
+      border-radius: 10px;
+      width: 209px;
+      top: 32px;
+      transform: translateX(-63px);
+      opacity: 0;
+      pointer-events: none;
+      transition: all .3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, .05)
+    }
+
+    .eapps-widget-toolbar-panel-share-block:hover {
+      opacity: 1;
+      pointer-events: all
+    }
+
+    .eapps-widget-toolbar-panel-share-block-text {
+      color: #111;
+      font-size: 15px;
+      font-weight: 400;
+      padding: 12px 0;
+      text-align: center
+    }
+
+    .eapps-widget-toolbar-panel-share-block-text-icon {
+      padding-bottom: 4px
+    }
+
+    .eapps-widget-toolbar-panel-share-block-actions {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      border-top: 1px solid hsla(0, 0%, 7%, .1)
+    }
+
+    .eapps-widget-toolbar-panel-share-block-actions-item {
+      width: 33.333333%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 39px;
+      transition: all .3s ease;
+      background-color: transparent
+    }
+
+    .eapps-widget-toolbar-panel-share-block-actions-item:hover {
+      background-color: #fafafa
+    }
+
+    .eapps-widget-toolbar-panel-share-block-actions-item a {
+      width: 100%;
+      height: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center
+    }
+
+    .eapps-widget-toolbar-panel-share-block-actions-item-icon {
+      width: 16px;
+      height: 16px;
+      display: block
+    }
+
+    .eapps-widget-toolbar-panel-share-block-actions-item-facebook .eapps-widget-toolbar-panel-share-block-actions-item-icon {
+      fill: #3c5a9b
+    }
+
+    .eapps-widget-toolbar-panel-share-block-actions-item-twitter .eapps-widget-toolbar-panel-share-block-actions-item-icon {
+      fill: #1ab2e8
+    }
+
+    .eapps-widget-toolbar-panel-share-block-actions-item-google .eapps-widget-toolbar-panel-share-block-actions-item-icon {
+      fill: #dd4b39
+    }
+
+    .eapps-widget-toolbar-panel-share-block-actions-item:not(:last-child) {
+      border-right: 1px solid hsla(0, 0%, 7%, .1)
+    }
+  </style>
+  <style data-styled="active" data-styled-version="6.1.13"></style>
+</head>
+
+<body class="body" style="">
+  <div data-animation="over-left" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
+    role="banner" class="navbar-copy w-nav">
+    <div class="container-nav-copy"><a id="w-node-ba7cbe51-184b-aa25-5a4b-15d436e14e69-6300342b"
+        href="https://www.coneable.la/" aria-current="page" class="band-mobile w-nav-brand w--current"
+        aria-label="home"><img src="./assets/logo_coneable.png" alt="logo coneable" class="logomobile"></a>
+      <nav role="navigation" id="w-node-_13e77f36-0978-3428-7998-50d46300342f-6300342b" class="nav-menu w-nav-menu"><a
+          id="w-node-_13e77f36-0978-3428-7998-50d463003430-6300342b" data-w-id="13e77f36-0978-3428-7998-50d463003430"
+          href="#" class="button-link w-nav-link">Pre Coneable</a><a data-w-id="13e77f36-0978-3428-7998-50d463003432"
+          href="#" class="button-link w-nav-link">Fundamentals</a><a data-w-id="13e77f36-0978-3428-7998-50d463003434"
+          href=#" class="button-link w-nav-link">Advanced</a><a data-w-id="13e77f36-0978-3428-7998-50d463003436"
+          href="#" class="button-link w-nav-link">Pro</a></nav>
+      <div id="w-node-_3f4eb9f6-56ef-1bcc-49ab-1cc03b099459-6300342b" class="div-block-21"><a href="#"
+          class="button-small button-outline mobile w-button">Empezar </a><a href="#"
+          class="button button-oultine btn-16 desktop w-button">Empezar
+          ahora</a></div>
+    </div>
+  </div>
+  <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+  </div>
+  <section class="section-home">
+    <div class="container-hero">
+      <div class="container-content">
+        <div class="container-text-h1">
+          <div class="container-mobile">
+            <h1 class="text-h1 text-center mobile">Conviértete en el desarrollador de software<br></h1>
+            <h1 class="text-h1 text-center mobile">‍<span class="text-gradient-blue">que el mundo necesita</span></h1>
+            <div class="div-block-50">
+              <h2 class="text-h2 text-center">Coneable es el mejor instituto digital de desarrollo de software de
+                Latinoamérica.</h2>
+            </div>
+          </div>
+          <div class="container-desktop">
+            <h1 class="text-h1 text-center mobile line-1"><span class="anim-typewriter-1">Sé el desarrollador de
+                software</span><span class="text-gradient-blue"> <br>que el mundo necesita</span><br></h1>
+            <div class="div-block-51">
+              <h2 class="text-h2 text-center line-3"><span class="anim-typewriter-3">Coneable es el mejor instituto
+                  digital de desarrollo de software de Latinoamérica.</span></h2>
+            </div>
+          </div>
+          <div class="code-embed-3 w-embed">
+            <style>
+              /* Google Fonts */
+              @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+              /*
+.line-1, .line-2, .line-3 {
+  position: relative;
+  /*width: 24em;*/
+              /*margin: 0 auto;
+  border-right: 2px solid transparent; /* Inicialmente transparente
+  text-align: center;
+  overflow: hidden;
+}*/
+
+              /* Animation */
+              /*
+.anim-typewriter-1 {
+  animation: typewriter-1 2s steps(38) 0.5s 1 normal both,
+             blinkTextCursor-1 0.75s step-end 0.5s 3 normal,
+             blinkTextCursorEnd-1 0.75s step-end 2.5s 1 normal forwards;
+}
+
+.anim-typewriter-2 {
+  animation: typewriter-2 1.2s steps(20) 2.75s 1 normal both,
+             blinkTextCursor-2 0.75s step-end 2.75s 2 normal,
+             blinkTextCursorEnd-2 0.75s step-end 3.95s 1 normal forwards;
+}
+
+.anim-typewriter-3 {
+  animation: typewriter-3 4s steps(71) 4.2s 1 normal both,
+             blinkTextCursor-3 0.75s step-end 4.2s 5 normal,
+             blinkTextCursorEnd-3 0.75s step-end 8.2s 1 normal forwards;
+}
+
+
+@keyframes typewriter-1 {
+  from { width: 0; }
+  to { width: 20em; }
+}
+
+@keyframes typewriter-2 {
+  from { width: 0; }
+  to { width: 11em; }
+}
+
+@keyframes typewriter-3 {
+  from { width: 0; }
+  to { width: 24em; }
+}
+
+@keyframes blinkTextCursor-1 {
+  0%, 100% { border-right-color: transparent; }
+  50% { border-right-color: rgba(255,255,255,.75); }
+}
+
+@keyframes blinkTextCursor-2 {
+  0%, 100% { border-right-color: transparent; }
+  50% { border-right-color: rgba(255,255,255,.75); }
+}
+
+@keyframes blinkTextCursor-3 {
+  0%, 100% { border-right-color: transparent; }
+  50% { border-right-color: rgba(255,255,255,.75); }
+}
+
+@keyframes blinkTextCursorEnd-1 {
+  0% { border-right-color: rgba(255,255,255,.75); }
+  100% { border-right-color: transparent; }
+}
+
+@keyframes blinkTextCursorEnd-2 {
+  0% { border-right-color: rgba(255,255,255,.75); }
+  100% { border-right-color: transparent; }
+}
+
+@keyframes blinkTextCursorEnd-3 {
+  0% { border-right-color: rgba(255,255,255,.75); }
+  100% { border-right-color: transparent; }
+}*/
+            </style>
+          </div>
+        </div>
+        <div class="div-block-64">
+          <div class="container-button-main"><a href="#" class="button button-oultine w-button">Empieza tu
+              postulación</a>
+            <div aria-labelledby="Popup Modal" role="dialog" aria-modal="true" class="modal-wrapper">
+              <div id="w-node-_26256bfe-c619-8e80-2503-727efa59248f-1aff368c" class="modal-container">
+                <div class="card-body">
+                  <div class="text-40">Despega tu carrera<br><span class="text-gradient-blue">hoy.</span></div>
+                  <div class="div-block-22">
+                    <div class="w-form">
+                      <form id="wf-form-form" name="wf-form-form" data-name="form" method="get" class="form"
+                        data-wf-page-id="665691d17f7f5d3d1aff368c"
+                        data-wf-element-id="d84e08ce-b775-ea64-2be4-99a8eaa1e03e" aria-label="form">
+                        <div class="input"><label for="name-2" class="text-label">Nombre y apellido</label><input
+                            class="form-control w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder=""
+                            type="text" id="name-2" required=""></div>
+                        <div class="input"><label for="email-3" class="text-label">Correo</label><input
+                            class="form-control w-input" maxlength="256" name="email-3" data-name="Email 3"
+                            placeholder="" type="email" id="email-3" required=""></div>
+                        <div class="input"><label for="country-3" class="text-label">País</label><select id="country-3"
+                            name="country-3" data-name="Country 3" required="" class="select w-select">
+                            <option value="Perú">Perú</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Argentina">Argentina</option>
+                          </select></div>
+                        <div class="input"><label for="phone-2" class="text-label">Número de teléfono</label><input
+                            class="form-control w-input" maxlength="256" name="phone-2" data-name="Phone 2"
+                            placeholder="" type="tel" id="phone-2" required=""></div>
+                        <div class="input"><label for="programs-3" class="text-label">Programa de tu
+                            interés</label><select id="programs-3" name="programs" data-name="programs" required=""
+                            class="select w-select">
+                            <option value="">Selecciona una opción</option>
+                            <option value="Pre Coneable">Pre Coneable</option>
+                            <option value="Fundamentals">Fundamentals</option>
+                            <option value="Advanced">Advanced</option>
+                            <option value="Pro">Pro</option>
+                          </select></div>
+                        <div class="div-block-23"><label class="w-checkbox">
+                            <div class="w-checkbox-input w-checkbox-input--inputType-custom"></div><input
+                              type="checkbox" id="checkbox-3" name="checkbox-3" data-name="Checkbox 3"
+                              style="opacity:0;position:absolute;z-index:-1"><span
+                              class="text-1 text-white w-form-label" for="checkbox-3">Acepto los términos, condiciones y
+                              política de privacidad <span class="text-gradient-blue">*</span></span>
+                          </label><label class="w-checkbox">
+                            <div class="w-checkbox-input w-checkbox-input--inputType-custom"></div><input
+                              type="checkbox" id="checkbox-2" name="checkbox-2" data-name="Checkbox 2"
+                              style="opacity:0;position:absolute;z-index:-1"><span
+                              class="text-1 text-white w-form-label" for="checkbox-2">Acepto recibir información sobre
+                              Coneable</span>
+                          </label></div><input type="submit" data-wait="Enviando..." class="button w-button"
+                          value="Enviar">
+                      </form>
+                      <div class="insert-success-text w-form-done" tabindex="-1" role="region"
+                        aria-label="form success">
+                        <div class="text-24">Formulario enviado con éxito</div>
+                      </div>
+                      <div class="error-message w-form-fail" tabindex="-1" role="region" aria-label="form failure">
+                        <div class="text-block-3">Confirma que todos los campos estén completos</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-w-id="26256bfe-c619-8e80-2503-727efa592494" class="modal-close_wrapper w-embed"><button
+                    type="button" aria-label="Close Modal" class="modal-close"><span
+                      aria-hidden="true">×</span></button></div>
+              </div>
+              <div aria-hidden="true" tabindex="-1" id="w-node-_26256bfe-c619-8e80-2503-727efa592495-1aff368c"
+                class="modal-close-area"></div>
+            </div>
+          </div>
+          <p class="text-14 text-grey text-regular">Comienza tu postulación en menos de un minuto.</p>
+        </div>
+      </div>
+      <div class="home_app-component opacity-50">
+        <div class="home_app-list-wrapper-copy-copy">
+          <div class="home_app-list">
+            <div id="dec-text-wrapper-1" class="home_app-icon-wrapper" style="opacity: 1;">
+              <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                  class="typewriter-text">!DOCTYPE html&gt;</span></div>
+              <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                  class="typewriter-text">html lang="es"&gt;</span></div>
+              <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                  class="typewriter-text">head&gt;</span></div>
+              <div class="div-block-62">
+                <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                    class="typewriter-text">meta charset="UTF-8"&gt;</span></div>
+                <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                    class="typewriter-text">meta name="viewport" content="width=device-width,
+                    initial-scale=1.0"&gt;</span></div>
+                <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                    class="typewriter-text">title&gt;Coneable</span></div>
+                <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                    class="typewriter-text">link rel="stylesheet" href="styles.css"&gt;</span></div>
+              </div>
+              <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                  class="typewriter-text">body&gt;</span></div>
+              <div class="div-block-62">
+                <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                    class="typewriter-text">header&gt;</span></div>
+                <div class="div-block-62">
+                  <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                      class="typewriter-text">h1&gt;Coneable: Cambiando el Mundo de la Salud y Finanzas</span></div>
+                  <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                      class="typewriter-text">p&gt;Únete a nuestro viaje para hacer la diferencia en el sector de la
+                      salud y las finanzas.<p></p></span></div>
+                </div>
+                <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                    class="typewriter-text">header&gt;</span></div>
+              </div>
+              <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                  class="typewriter-text">/head&gt;</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="div-block-24-copy"></div>
+      </div>
+      <div class="home_app-component-left opacity-50">
+        <div class="home_app-list-wrapper-left-copy-copy">
+          <div class="home_app-list-left">
+            <div id="dec-text-wrapper-2" class="home_app-icon-wrapper-left" style="opacity: 1;">
+              <div class="div-block-62">
+                <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                    class="typewriter-text">section class="hero"&gt;</span></div>
+                <div class="div-block-62">
+                  <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                      class="typewriter-text">img src="hero-image.jpg" alt="Innovación en salud y finanzas con</span>
+                  </div>
+                </div>
+              </div>
+              <div class="paragraph"><span class="typewriter-text">Coneable"&gt;</span></div>
+              <div class="div-block-62">
+                <div class="div-block-62">
+                  <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                      class="typewriter-text">button onclick="learnMore()"&gt;Aprende más</span></div>
+                </div>
+                <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                    class="typewriter-text">/section&gt;</span></div>
+              </div>
+              <div class="div-block-62">
+                <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                    class="typewriter-text">section class="about"&gt;</span></div>
+                <div class="div-block-62">
+                  <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                      class="typewriter-text">h2&gt;Sobre Nuestra Misión</span></div>
+                  <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                      class="typewriter-text">p&gt;En Coneable, colaboramos con innovadores, pensadores y</span></div>
+                </div>
+              </div>
+              <div class="paragraph"><span class="typewriter-text">hacedores en todo el mundo para traer cambios
+                  sostenibles a los problemas</span></div>
+              <div class="paragraph"><span class="typewriter-text">más apremiantes de nuestro tiempo en el sector de
+                  salud y finanzas.<p></p></span></div>
+              <div class="div-block-62">
+                <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                    class="typewriter-text">/section&gt;</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div-block-24"></div>
+      </div>
+      <div class="code-embed-2 w-embed">
+        <style>
+          .home_app-list-wrapper {
+            white-space: nowrap;
+            will-change: transform;
+            animation: marquee-horizontal 40s linear infinite;
+            /* manipulate the speed of the marquee by changing "40s" line above*/
+          }
+
+          .home_app-list-wrapper.is-right {
+            animation: marquee-horizontal-alt 40s linear infinite;
+          }
+
+          .home_app-list-wrapper.is-top {
+            animation: marquee-vertical 40s linear infinite;
+          }
+
+          @keyframes marquee-horizontal {
+            from {
+              transform: translateX(0);
+            }
+
+            to {
+              transform: translateX(50%);
+            }
+          }
+
+          @keyframes marquee-horizontal-alt {
+            from {
+              transform: translateX(0);
+            }
+
+            to {
+              transform: translateX(-50%);
+            }
+          }
+
+          @keyframes marquee-vertical {
+            from {
+              transform: translateY(0);
+            }
+
+            to {
+              transform: translateY(50%);
+            }
+          }
+
+          .home_app-list-wrapper-left {
+            white-space: nowrap;
+            will-change: transform;
+            animation: marquee-horizontal-alt-left 40s linear infinite;
+            /* manipulate the speed of the marquee by changing "40s" line above*/
+          }
+
+          .home_app-list-wrapper-left.is-left {
+            animation: marquee-horizontal-alt-left 40s linear infinite;
+          }
+
+          @keyframes marquee-horizontal-alt-left {
+            from {
+              transform: translateX(50%);
+            }
+
+            to {
+              transform: translateX(0%);
+            }
+          }
+
+          @media only screen and (max-width: 768px) {
+            .homepage_logo-wrapper {
+              animation: marquee-horizontal-alt 20s linear infinite;
+            }
+          }
+        </style>
+      </div>
+    </div>
+  </section>
+  <section class="section-logos-copy">
+    <div class="container-empresas">
+      <p class="text-14 text-regular text-blue">Nuestros egresados construyen el futuro de 150+ empresas</p>
+      <div class="grid-logos">
+        <div id="w-node-_8440fe9b-fe11-2f90-1902-b95f0222f3f2-0222f3f2" class="div-block-4"><img src="./assets/"
+            loading="eager" alt="" class="image"></div>
+        <div id="w-node-_8440fe9b-fe11-2f90-1902-b95f0222f3f2-0222f3f2" class="div-block-4"><img
+            src="./assets/668f196993b7543546a75eec_NTT DATA.svg" loading="eager" alt="" class="image"></div>
+        <div id="w-node-_8440fe9b-fe11-2f90-1902-b95f0222f3f2-0222f3f2" class="div-block-4"><img
+            src="./assets/668f19819b6c35a70136f1f5_Indra.svg" loading="eager" alt="" class="image"></div>
+        <div id="w-node-_8440fe9b-fe11-2f90-1902-b95f0222f3f2-0222f3f2" class="div-block-4"><img
+            src="./assets/668f19174a087defa3660004_Able.svg" loading="eager" alt="" class="image"></div>
+        <div id="w-node-_8440fe9b-fe11-2f90-1902-b95f0222f3f2-0222f3f2" class="div-block-4"><img
+            src="./assets/668f1925f75add9ab0aa8a07_Crehana.svg" loading="eager" alt="" class="image"></div>
+        <div id="w-node-_8440fe9b-fe11-2f90-1902-b95f0222f3f2-0222f3f2" class="div-block-4"><img
+            src="./assets/668f193aa081a31b807b02a7_Rappi.svg" loading="eager" alt="" class="image"></div>
+        <div id="w-node-_8440fe9b-fe11-2f90-1902-b95f0222f3f2-0222f3f2" class="div-block-4"><img
+            src="./assets/6688280c82b6a1f47ecdae8a_Kushki-2.png" loading="eager" alt="" class="image"></div>
+        <div id="w-node-_8440fe9b-fe11-2f90-1902-b95f0222f3f2-0222f3f2" class="div-block-4"><img
+            src="./assets/668f195618b4a7d9a1c8651e_Buk.svg" loading="eager" alt="" class="image"></div>
+      </div>
+      <div class="grid-logos-list">
+        <div class="grid-logos-mobile">
+          <div id="w-node-_8440fe9b-fe11-2f90-1902-b95f0222f3f2-0222f3f2" class="div-block-4"><img
+              src="./assets/6688280d0ccf4847180cced1_Globant.png" loading="eager" alt="" class="image"></div>
+          <div id="w-node-_8440fe9b-fe11-2f90-1902-b95f0222f3f2-0222f3f2" class="div-block-4"><img
+              src="./assets/6688280ddd87ea3ecc977d95_NTT DATA.png" loading="eager" alt="" class="image"></div>
+          <div id="w-node-_8440fe9b-fe11-2f90-1902-b95f0222f3f2-0222f3f2" class="div-block-4"><img
+              src="./assets/6688280d33c3e7873f6c46a0_Indra.png" loading="eager" alt="" class="image"></div>
+          <div id="w-node-_8440fe9b-fe11-2f90-1902-b95f0222f3f2-0222f3f2" class="div-block-4"><img
+              src="./assets/6688280d92b99695f8cab486_Able.png" loading="eager" alt="" class="image"></div>
+          <div id="w-node-_8440fe9b-fe11-2f90-1902-b95f0222f3f2-0222f3f2" class="div-block-4"><img
+              src="./assets/6688280d1bd9833bae14194e_Crehana.png" loading="eager" alt="" class="image"></div>
+          <div id="w-node-_8440fe9b-fe11-2f90-1902-b95f0222f3f2-0222f3f2" class="div-block-4"><img
+              src="./assets/6688280d1c9c30f482ea08c5_Rappi.png" loading="eager" alt="" class="image"></div>
+          <div id="w-node-_8440fe9b-fe11-2f90-1902-b95f0222f3f2-0222f3f2" class="div-block-4"><img
+              src="./assets/6688280c82b6a1f47ecdae8a_Kushki-2.png" loading="eager" alt="" class="image"></div>
+          <div id="w-node-_8440fe9b-fe11-2f90-1902-b95f0222f3f2-0222f3f2" class="div-block-4"><img
+              src="./assets/6688280dbfbe8ef22815dd73_Buk.png" loading="eager" alt="" class="image"></div>
+        </div>
+      </div>
+      <div class="code-embed w-embed">
+        <style>
+          }
+
+          .grid-logos-mobile {
+            white-space: nowrap;
+            will-change: transform;
+            animation: marquee-horizonta-alt 60s linear infinite;
+            /* manipulate the speed of the marquee by changing "40s" line above*/
+          }
+
+          .grid-logos-list {
+            animation: marquee-horizontal-alt 60s linear infinite;
+          }
+
+          .grid-logos-mobile {
+            animation: marquee-horizontal-alt 60s linear infinite;
+          }
+
+          @keyframes marquee-horizontal-alt {
+            from {
+              transform: translateX(0);
+            }
+
+            to {
+              transform: translateX(-50%);
+            }
+          }
+        </style>
+      </div>
+    </div>
+  </section>
+  <section class="section-cards">
+    <div class="div-block-43">
+      <div class="div-block-44"><img src="./assets/6663c7cd7c1c7fbcfc3c2632_Group 97.svg" loading="lazy" alt=""
+          class="image-6">
+        <div class="div-block-45">
+          <div class="div-block-46">
+            <div class="text-h1">2600+</div>
+            <p class="text-14 text-white text-regular mobile">Graduados</p>
+          </div>
+        </div>
+      </div>
+      <div class="div-block-44"><img src="./assets/6663c7cd23bb4def0e281f77_Group 97-1.svg" loading="lazy" alt=""
+          class="image-6">
+        <div class="div-block-45">
+          <div class="div-block-46">
+            <div class="text-h1">200+</div>
+            <p class="text-14 text-white text-regular mobile">Empresas partner</p>
+          </div>
+        </div>
+      </div>
+      <div class="div-block-44"><img src="./assets/6663c7cd2480fa7aec318469_Group 97-2.svg" loading="lazy" alt=""
+          class="image-6">
+        <div class="div-block-45">
+          <div class="div-block-46">
+            <div class="text-h1">95%</div>
+            <p class="text-14 text-white text-regular mobile">Tasa de empleabilidad</p>
+          </div>
+        </div>
+      </div>
+      <div class="div-block-44"><img src="./assets/6663c7cd9a87a6ddbfaea9a9_Group 97-3.svg" loading="lazy" alt=""
+          class="image-6">
+        <div class="div-block-45">
+          <div class="div-block-46">
+            <div class="text-h1">$1200</div>
+            <p class="text-14 text-white text-regular mobile">Salario promedio</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-video">
+    <div data-w-id="15b2d4e1-56d2-4d19-36da-64691ee4e9b5"
+      style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+      class="video-container">
+      <div class="div-block-7">
+        <div class="text-subtitle">Cada gran historia<br>‍<span class="text-gradient-blue">tiene un gran inicio.</span>
+        </div>
+      </div>
+      <div class="div-block-38"><img src="./assets/665e6c97eb9fc41cd1fcc218_play 1.svg" loading="lazy" alt=""
+          class="image-5"></div>
+    </div>
+  </section>
+  <section class="section-features">
+    <div class="features-container">
+      <div class="div-block-7">
+        <div class="text-subtitle">Aprenderás lo necesario<br><span class="text-gradient-blue">para desarrollar tu
+            futuro</span></div>
+      </div>
+      <div class="grid-cards">
+        <div data-w-id="7c408faf-ba56-20d0-ba1c-c6331653eecc" class="div-block-9"
+          style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+          <div class="div-block-39">
+            <div class="text-15">Estudia una currícula actualizada</div>
+            <div class="text-14 text-white text-regular">Nuestros programas están enfocados en formar una carrera en
+              desarrollo de software alineada al futuro.</div>
+          </div><img src="./assets/6656a6fef3a1b7f3b4c8f4b1_education 1.svg" loading="lazy" alt="" class="icon">
+        </div>
+        <div data-w-id="7c408faf-ba56-20d0-ba1c-c6331653eecc" class="div-block-9"
+          style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+          <div class="div-block-39">
+            <div class="text-15">Aprende de manera personalizada</div>
+            <div class="text-14 text-white text-regular">Interactuarás con los profesores en vivo y podrás reservar
+              tiempo extra con ellos cuando más lo necesites.</div>
+          </div><img src="./assets/6656a6feabc2bd9c0e748125_collaborate 1.svg" loading="lazy" alt="" class="icon">
+        </div>
+        <div data-w-id="7c408faf-ba56-20d0-ba1c-c6331653eecc" class="div-block-9"
+          style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+          <div class="div-block-39">
+            <div class="text-15">Asegura tu empleabilidad</div>
+            <div class="text-14 text-white text-regular">Estamos enfocados en acercarte a un empleo como desarrollador
+              de software con un salario competitivo.</div>
+          </div><img src="./assets/6656a6fef76e14b73a30539d_portfolio (2) 1.svg" loading="lazy" alt="" class="icon">
+        </div>
+        <div data-w-id="7c408faf-ba56-20d0-ba1c-c6331653eecc" class="div-block-9"
+          style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+          <div class="div-block-39">
+            <div class="text-15">Trabaja en proyectos reales</div>
+            <div class="text-14 text-white text-regular">Podrás unirte a Coneable Labs, nuestra agencia de Software y
+              productos digitales para empresas internacionales.</div>
+          </div><img src="./assets/6656a6fe186d343163a3b491_laptop (3) 1.svg" loading="lazy" alt="" class="icon">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-bars">
+    <div data-w-id="66313ae7-17b7-62ef-a396-ce601b076c7d"
+      style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+      class="div-block-26">
+      <div id="w-node-_76323bfa-b4e0-3918-7ef6-4d11d09a53c1-1aff368c" class="div-block-13">
+        <div class="text-subtitle">Escoge el punto de inicio<br><span class="text-gradient-blue">de un camino
+            guiado</span></div>
+      </div>
+      <div id="w-node-cbcd3b9f-6d43-2b7f-7ba7-f150c7f8360e-1aff368c" data-w-id="cbcd3b9f-6d43-2b7f-7ba7-f150c7f8360e"
+        class="div-block-11">
+        <div id="w-node-_6bf82087-82b8-3af8-1411-c777efdd8a0c-1aff368c" class="bar">
+          <div id="w-node-_5c64b837-8766-9755-74c7-2d260e1f5bf3-1aff368c" class="container-bar">
+            <div class="bar-text">
+              <div class="text-21">Pre-Coneable</div>
+              <div class="text-14 text-grey text-regular">Descubre el mundo del Desarrollo.</div>
+            </div>
+            <div id="w-node-c42d9733-bbcc-495d-6496-e077fe28f4a0-1aff368c" style="height: 44px; width: 260px;"
+              class="bar-1"></div>
+          </div>
+        </div>
+        <div id="w-node-d248cecd-bf3c-3d53-4654-0fe348d5ef2b-1aff368c" class="bar">
+          <div id="w-node-_97049f8e-a2f8-fe9f-0192-cf1693ec5375-1aff368c" class="container-bar">
+            <div class="bar-text">
+              <div class="text-21">Fundamentals</div>
+              <div class="text-14 text-grey text-regular">Entiende y Desarrolla Web Apps.</div>
+            </div>
+            <div id="w-node-d248cecd-bf3c-3d53-4654-0fe348d5ef2e-1aff368c" style="height: 112px; width: 260px;"
+              class="bar-2"></div>
+          </div>
+        </div>
+        <div id="w-node-a112fc1f-4668-b2b6-67ff-e57b07d8b157-1aff368c" class="bar">
+          <div class="container-bar">
+            <div class="bar-text">
+              <div class="text-21">Advanced</div>
+              <div class="text-14 text-grey text-regular">Domina el Desarrollo Web Full-Stack.</div>
+            </div>
+            <div id="w-node-a112fc1f-4668-b2b6-67ff-e57b07d8b15a-1aff368c" style="height: 220px; width: 260px;"
+              class="bar-3"></div>
+          </div>
+        </div>
+        <div id="w-node-_1235fd42-beea-174a-8606-360f376b4000-1aff368c" class="bar">
+          <div class="container-bar">
+            <div class="bar-text">
+              <div class="text-21">Pro</div>
+              <div class="text-14 text-grey text-regular">Profesionaliza tu carrera.</div>
+            </div>
+            <div id="w-node-_1235fd42-beea-174a-8606-360f376b4003-1aff368c" style="height: 360px; width: 260px;"
+              class="bar-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-programs">
+    <div class="div-block-37">
+      <div>
+        <div class="text-subtitle">Cuatro programas<br><span class="text-gradient-blue">que transformarán tu
+            carrera</span></div>
+      </div>
+      <div class="div-block-8">
+        <div id="pre-coneable" class="faq1_accordion">
+          <div data-w-id="e944f5e7-5199-c694-b7df-5cfddea32066" class="faq1_question">
+            <div class="faq1_icon-wrapper preconeable">
+              <div class="icon-embed-small w-embed"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_414_1595)">
+                    <path d="M16 22L6 12L7.4 10.6L16 19.2L24.6 10.6L26 12L16 22Z" fill="white"></path>
+                  </g>
+                  <defs>
+                    <clippath id="clip0_414_1595">
+                      <rect width="32" height="32" fill="white" transform="matrix(0 1 -1 0 32 0)"></rect>
+                    </clippath>
+                  </defs>
+                </svg></div>
+            </div>
+            <h3 class="accordian_trigger-title text-aquamarine">Pre Coneable</h3>
+          </div>
+          <div class="faq1_answer preconeable" style="width: 100%; height: 0px;">
+            <div class="margin-bottom margin-small">
+              <div role="region" class="accordian_content">
+                <div class="accordian_content-spacer">
+                  <div>
+                    <p class="text-14 text-regular text-white">Darás tus primeros pasos como Desarrollador y aprenderás
+                      a crear una aplicación web desde cero.</p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-10-400 text-aquamarine">●</p>
+                    <p class="text-14 text-regular text-white">Introducción a HTML, CSS y JavaScript.</p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-10-400 text-aquamarine">●</p>
+                    <p class="text-14 text-regular text-white">Diseño web responsivo para web y smartphones.</p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-10-400 text-aquamarine">●</p>
+                    <p class="text-14 text-regular text-white">Elementos interactivos.</p>
+                  </div>
+                </div>
+                <div class="accordian_content-spacer-copy">
+                  <div class="caracteristicas">
+                    <div class="div-block-29">
+                      <p class="text-14 text-grey text-regular">Conocimiento previo: Ninguno</p>
+                    </div>
+                    <p class="text-14 text-grey text-regular">4 semanas. Lunes, miércoles y viernes de 7pm a 9pm. </p>
+                    <div class="div-block-35">
+                      <p class="text-14 text-grey text-regular">Pago único de US$150</p>
+                      <div class="tooltip _2"><img class="link" src="./assets/665955a4e7a0c43298a161e5_icon-info.svg"
+                          alt="" data-tippy-content="Monto no reembolsable" data-tippy-followcursor="false"
+                          data-tippy-interactive="false" data-tippy-placement="top" loading="lazy"
+                          data-tippy-arrow="true"></div>
+                    </div>
+                  </div>
+                  <div class="div-block-21"><a id="preconeable_btn" href="#"
+                      class="button button-aquamarine btn-16 w-button">Empieza ahora</a>
+                    <div aria-labelledby="Popup Modal" role="dialog" aria-modal="true" class="modal-wrapper">
+                      <div id="w-node-bb2db82a-8164-9720-a761-1c169368d8cd-1aff368c" class="modal-container">
+                        <div class="card-body">
+                          <div class="text-24 text-white">Despega tu carrera<br><span
+                              class="text-gradient-blue">hoy.</span></div>
+                          <div class="div-block-22">
+                            <div class="w-form">
+                              <form id="wf-form-form-fundamentals" name="wf-form-form-fundamentals"
+                                data-name="form-fundamentals" method="get" class="form"
+                                data-wf-page-id="665691d17f7f5d3d1aff368c"
+                                data-wf-element-id="43037d4a-ea3c-05bc-08c9-823d17691ba5"
+                                aria-label="form-fundamentals">
+                                <div class="input"><label for="name-3" class="text-label">Nombre y
+                                    apellido</label><input class="form-control w-input" maxlength="256" name="name-2"
+                                    data-name="Name 2" placeholder="" type="text" id="name-2" required=""></div>
+                                <div class="input"><label for="email-4" class="text-label">Correo</label><input
+                                    class="form-control w-input" maxlength="256" name="email-3" data-name="Email 3"
+                                    placeholder="" type="email" id="email-3" required=""></div>
+                                <div class="input"><label for="Country-5" class="text-label">País</label><select
+                                    id="Country-5" name="Country-5" data-name="Country 5" required=""
+                                    class="select w-select">
+                                    <option value="Perú">Perú</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Argentina">Argentina</option>
+                                  </select></div>
+                                <div class="input"><label for="phone-3" class="text-label">Número de
+                                    teléfono</label><input class="form-control w-input" maxlength="256" name="phone-2"
+                                    data-name="Phone 2" placeholder="" type="tel" id="phone-2" required=""></div>
+                                <div class="input"><label for="programs-2" class="text-label">Programa de tu
+                                    interés</label><select id="programs-2" name="programs-2" data-name="Programs 2"
+                                    required="" class="select w-select">
+                                    <option value="Pre Coneable">Pre Coneable</option>
+                                  </select></div>
+                                <div class="div-block-23"><label class="w-checkbox">
+                                    <div class="w-checkbox-input w-checkbox-input--inputType-custom"></div><input
+                                      type="checkbox" name="checkbox-3" id="checkbox-3" data-name="Checkbox 3"
+                                      style="opacity:0;position:absolute;z-index:-1"><span
+                                      class="text-1 text-white w-form-label" for="checkbox-3">Acepto los términos,
+                                      condiciones y política de privacidad <span
+                                        class="text-gradient-blue">*</span></span>
+                                  </label><label class="w-checkbox">
+                                    <div class="w-checkbox-input w-checkbox-input--inputType-custom"></div><input
+                                      type="checkbox" name="checkbox-2" id="checkbox-2" data-name="Checkbox 2"
+                                      style="opacity:0;position:absolute;z-index:-1"><span
+                                      class="text-1 text-white w-form-label" for="checkbox-2">Acepto recibir información
+                                      sobre Coneable</span>
+                                  </label></div><input type="submit" data-wait="Enviando..." class="button w-button"
+                                  value="Enviar">
+                              </form>
+                              <div class="insert-success-text w-form-done" tabindex="-1" role="region"
+                                aria-label="form-fundamentals success">
+                                <div class="text-24">Formulario enviado con éxito</div>
+                              </div>
+                              <div class="error-message w-form-fail" tabindex="-1" role="region"
+                                aria-label="form-fundamentals failure">
+                                <div class="text-block-3">Confirma que todos los campos estén completos</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-w-id="bb2db82a-8164-9720-a761-1c169368d8cf" class="modal-close_wrapper w-embed">
+                          <button type="button" aria-label="Close Modal" class="modal-close"><span
+                              aria-hidden="true">×</span></button>
+                        </div>
+                      </div>
+                      <div aria-hidden="true" tabindex="-1" id="w-node-bb2db82a-8164-9720-a761-1c169368d8d0-1aff368c"
+                        class="modal-close-area"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="fundamentals" class="faq1_accordion">
+          <div data-w-id="92aa9d58-5c41-537f-cc17-d564658c3ed6" class="faq1_question">
+            <div class="faq1_icon-wrapper fundamentals">
+              <div class="icon-embed-small w-embed"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_414_1595)">
+                    <path d="M16 22L6 12L7.4 10.6L16 19.2L24.6 10.6L26 12L16 22Z" fill="white"></path>
+                  </g>
+                  <defs>
+                    <clippath id="clip0_414_1595">
+                      <rect width="32" height="32" fill="white" transform="matrix(0 1 -1 0 32 0)"></rect>
+                    </clippath>
+                  </defs>
+                </svg></div>
+            </div>
+            <h3 class="accordian_trigger-title text-aquamarineblue">Fundamentals</h3>
+          </div>
+          <div class="faq1_answer fundamentals" style="width: 100%; height: 0px;">
+            <div class="margin-bottom margin-small">
+              <div role="region" class="accordian_content">
+                <div class="accordian_content-spacer">
+                  <div>
+                    <p class="text-14 text-regular text-white">Aprenderás a profundidad cómo funcionan las tecnologías
+                      fundamentales del Desarrollo Web y construirás cimientos duraderos.</p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-10-400 text-aquamarineblue">●</p>
+                    <p class="text-14 text-regular text-white">HTML avanzado usando etiquetas semánticas y
+                      accesibilidad.</p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-10-400 text-aquamarineblue">●</p>
+                    <p class="text-14 text-regular text-white">CSS4 (grid, flexbox, animaciones, etc.) y arquitectura
+                      ITCSS.</p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-10-400 text-aquamarineblue">●</p>
+                    <p class="text-14 text-regular text-white">Inmersión en JavaScript (promesas, módulos, clases,
+                      etc.).</p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-10-400 text-aquamarineblue">●</p>
+                    <p class="text-14 text-regular text-white">Entorno de desarrollo profesional usando Node.js.</p>
+                  </div>
+                </div>
+                <div class="accordian_content-spacer-copy">
+                  <div class="caracteristicas">
+                    <p class="text-14 text-grey text-regular">Conocimiento previo: Pre-Coneable</p>
+                    <div class="div-block-30">
+                      <p class="text-14 text-grey text-regular">12 semanas. Lunes a viernes de 7pm a 9pm.</p>
+                    </div>
+                    <div class="div-block-35">
+                      <p class="text-14 text-grey text-regular">Pago único de US$800</p>
+                      <div class="tooltip _2"><img class="link" src="./assets/665955a4e7a0c43298a161e5_icon-info.svg"
+                          alt="" data-tippy-content="Opciones de financiamiento disponibles"
+                          data-tippy-followcursor="false" data-tippy-interactive="false" data-tippy-placement="top"
+                          loading="lazy" data-tippy-arrow="true"></div>
+                    </div>
+                  </div>
+                  <div class="div-block-21"><a id="fundamentals_btn" href="#" target="_blank"
+                      class="button button-aquamarineblue btn-16 w-button">Empieza ahora</a>
+                    <div aria-labelledby="Popup Modal" role="dialog" aria-modal="true" class="modal-wrapper">
+                      <div id="w-node-_92aa9d58-5c41-537f-cc17-d564658c3efd-1aff368c" class="modal-container">
+                        <div class="card-body">
+                          <div class="text-24 text-white">Despega tu carrera<br><span
+                              class="text-gradient-blue">hoy.</span></div>
+                          <div class="div-block-22">
+                            <div class="w-form">
+                              <form id="wf-form-form-fundamentals" name="wf-form-form-fundamentals"
+                                data-name="form-fundamentals" method="get" class="form"
+                                data-wf-page-id="665691d17f7f5d3d1aff368c"
+                                data-wf-element-id="44e6499e-c334-108b-87a1-de1d22b2d1e8"
+                                aria-label="form-fundamentals">
+                                <div class="input"><label for="name-3" class="text-label">Nombre y
+                                    apellido</label><input class="form-control w-input" maxlength="256" name="name-2"
+                                    data-name="Name 2" placeholder="" type="text" id="name-2" required=""></div>
+                                <div class="input"><label for="email-4" class="text-label">Correo</label><input
+                                    class="form-control w-input" maxlength="256" name="email-3" data-name="Email 3"
+                                    placeholder="" type="email" id="email-3" required=""></div>
+                                <div class="input"><label for="Country-5" class="text-label">País</label><select
+                                    id="Country-5" name="Country-5" data-name="Country 5" required=""
+                                    class="select w-select">
+                                    <option value="Perú">Perú</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Argentina">Argentina</option>
+                                  </select></div>
+                                <div class="input"><label for="phone-2" class="text-label">Número de
+                                    teléfono</label><input class="form-control w-input" maxlength="256" name="phone-2"
+                                    data-name="Phone 2" placeholder="" type="tel" id="phone-2" required=""></div>
+                                <div class="input"><label for="programs-2" class="text-label">Programa de tu
+                                    interés</label><select id="programs-2" name="programs-2" data-name="Programs 2"
+                                    required="" class="select w-select">
+                                    <option value="Fundametals">Fundametals</option>
+                                  </select></div>
+                                <div class="div-block-23"><label class="w-checkbox">
+                                    <div class="w-checkbox-input w-checkbox-input--inputType-custom"></div><input
+                                      type="checkbox" name="checkbox-3" id="checkbox-3" data-name="Checkbox 3"
+                                      style="opacity:0;position:absolute;z-index:-1"><span
+                                      class="text-1 text-white w-form-label" for="checkbox-3">Acepto los términos,
+                                      condiciones y política de privacidad <span
+                                        class="text-gradient-blue">*</span></span>
+                                  </label><label class="w-checkbox">
+                                    <div class="w-checkbox-input w-checkbox-input--inputType-custom"></div><input
+                                      type="checkbox" name="checkbox-2" id="checkbox-2" data-name="Checkbox 2"
+                                      style="opacity:0;position:absolute;z-index:-1"><span
+                                      class="text-1 text-white w-form-label" for="checkbox-2">Acepto recibir información
+                                      sobre Coneable</span>
+                                  </label></div><input type="submit" data-wait="Enviando..." class="button w-button"
+                                  value="Enviar">
+                              </form>
+                              <div class="insert-success-text w-form-done" tabindex="-1" role="region"
+                                aria-label="form-fundamentals success">
+                                <div class="text-24">Formulario enviado con éxito</div>
+                              </div>
+                              <div class="error-message w-form-fail" tabindex="-1" role="region"
+                                aria-label="form-fundamentals failure">
+                                <div class="text-block-3">Confirma que todos los campos estén completos</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-w-id="92aa9d58-5c41-537f-cc17-d564658c3eff" class="modal-close_wrapper w-embed">
+                          <button type="button" aria-label="Close Modal" class="modal-close"><span
+                              aria-hidden="true">×</span></button>
+                        </div>
+                      </div>
+                      <div aria-hidden="true" tabindex="-1" id="w-node-_92aa9d58-5c41-537f-cc17-d564658c3f00-1aff368c"
+                        class="modal-close-area"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="advanced" class="faq1_accordion">
+          <div data-w-id="98cac791-b2d5-5e94-b93f-faea8b4e9a3d" class="faq1_question">
+            <div class="faq1_icon-wrapper advanced">
+              <div class="icon-embed-small w-embed"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_414_1595)">
+                    <path d="M16 22L6 12L7.4 10.6L16 19.2L24.6 10.6L26 12L16 22Z" fill="white"></path>
+                  </g>
+                  <defs>
+                    <clippath id="clip0_414_1595">
+                      <rect width="32" height="32" fill="white" transform="matrix(0 1 -1 0 32 0)"></rect>
+                    </clippath>
+                  </defs>
+                </svg></div>
+            </div>
+            <h3 class="accordian_trigger-title text-cyan">Advanced</h3>
+          </div>
+          <div class="faq1_answer advanced" style="width: 100%; height: 0px;">
+            <div class="margin-bottom margin-small">
+              <div role="region" class="accordian_content">
+                <div class="accordian_content-spacer">
+                  <div>
+                    <p class="text-14 text-regular text-white">Dominarás el Desarrollo Web Full-Stack utilizando
+                      frameworks avanzados construyendo aplicaciones web Full-Stack complejas.</p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-10-400 text-cyan">●</p>
+                    <p class="text-14 text-regular text-white">Desarrollo web robusto usando TypeScript.</p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-10-400 text-cyan">●</p>
+                    <p class="text-14 text-regular text-white">RESTFul API con autenticación usando Express (backend).
+                    </p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-10-400 text-cyan">●</p>
+                    <p class="text-14 text-regular text-white">Páginas web interactivas com React moderno (frontend).
+                    </p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-10-400 text-cyan">●</p>
+                    <p class="text-14 text-regular text-white">Gestión de Bases de Datos con PostgreSQL.</p>
+                  </div>
+                </div>
+                <div class="accordian_content-spacer-copy">
+                  <div class="caracteristicas">
+                    <p class="text-14 text-grey text-regular">Conocimiento previo: Fundamentals</p>
+                    <div class="div-block-31">
+                      <p class="text-14 text-grey text-regular">12 semanas. Lunes a viernes de 7pm a 9pm.</p>
+                    </div>
+                    <div class="div-block-33">
+                      <p class="text-14 text-grey text-regular">Pago único de US$1,200</p>
+                      <div class="tooltip _2"><img class="link" src="./assets/665955a4e7a0c43298a161e5_icon-info.svg"
+                          alt="" data-tippy-content="Opciones de financiamiento disponibles"
+                          data-tippy-followcursor="false" data-tippy-interactive="false" data-tippy-placement="top"
+                          loading="lazy" data-tippy-arrow="true"></div>
+                    </div>
+                  </div>
+                  <div class="div-block-21"><a id="advanced_btn" href="#"
+                      class="button button-cyan btn-16 w-button">Empieza ahora</a>
+                    <div aria-labelledby="Popup Modal" role="dialog" aria-modal="true" class="modal-wrapper">
+                      <div id="w-node-_98cac791-b2d5-5e94-b93f-faea8b4e9a69-1aff368c" class="modal-container">
+                        <div class="card-body">
+                          <div class="text-24 text-white">Despega tu carrera<br><span
+                              class="text-gradient-blue">hoy.</span></div>
+                          <div class="div-block-22">
+                            <div class="w-form">
+                              <form id="wf-form-form-advanced" name="wf-form-form-advanced" data-name="form-advanced"
+                                method="get" class="form" data-wf-page-id="665691d17f7f5d3d1aff368c"
+                                data-wf-element-id="1346d8f1-e36e-8290-a45d-0178108b8a42" aria-label="form-advanced">
+                                <div class="input"><label for="name-3" class="text-label">Nombre y
+                                    apellido</label><input class="form-control w-input" maxlength="256" name="name-2"
+                                    data-name="Name 2" placeholder="" type="text" id="name-2" required=""></div>
+                                <div class="input"><label for="email-4" class="text-label">Correo</label><input
+                                    class="form-control w-input" maxlength="256" name="email-3" data-name="Email 3"
+                                    placeholder="" type="email" id="email-3" required=""></div>
+                                <div class="input"><label for="Country-5" class="text-label">País</label><select
+                                    id="Country-5" name="Country-5" data-name="Country 5" required=""
+                                    class="select w-select">
+                                    <option value="Perú">Perú</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Argentina">Argentina</option>
+                                  </select></div>
+                                <div class="input"><label for="phone-2" class="text-label">Número de
+                                    teléfono</label><input class="form-control w-input" maxlength="256" name="phone-2"
+                                    data-name="Phone 2" placeholder="" type="tel" id="phone-2" required=""></div>
+                                <div class="input"><label for="programs-2" class="text-label">Programa de tu
+                                    interés</label><select id="programs-2" name="programs-2" data-name="Programs 2"
+                                    required="" class="select w-select">
+                                    <option value="Advanced">Advanced</option>
+                                  </select></div>
+                                <div class="div-block-23"><label class="w-checkbox">
+                                    <div class="w-checkbox-input w-checkbox-input--inputType-custom"></div><input
+                                      type="checkbox" name="checkbox-3" id="checkbox-3" data-name="Checkbox 3"
+                                      style="opacity:0;position:absolute;z-index:-1"><span
+                                      class="text-1 text-white w-form-label" for="checkbox-3">Acepto los términos,
+                                      condiciones y política de privacidad <span
+                                        class="text-gradient-blue">*</span></span>
+                                  </label><label class="w-checkbox">
+                                    <div class="w-checkbox-input w-checkbox-input--inputType-custom"></div><input
+                                      type="checkbox" name="checkbox-2" id="checkbox-2" data-name="Checkbox 2"
+                                      style="opacity:0;position:absolute;z-index:-1"><span
+                                      class="text-1 text-white w-form-label" for="checkbox-2">Acepto recibir información
+                                      sobre Coneable</span>
+                                  </label></div><input type="submit" data-wait="Enviando..." class="button w-button"
+                                  value="Enviar">
+                              </form>
+                              <div class="insert-success-text w-form-done" tabindex="-1" role="region"
+                                aria-label="form-advanced success">
+                                <div class="text-24">Formulario enviado con éxito</div>
+                              </div>
+                              <div class="error-message w-form-fail" tabindex="-1" role="region"
+                                aria-label="form-advanced failure">
+                                <div class="text-block-3">Confirma que todos los campos estén completos</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-w-id="98cac791-b2d5-5e94-b93f-faea8b4e9a6b" class="modal-close_wrapper w-embed">
+                          <button type="button" aria-label="Close Modal" class="modal-close"><span
+                              aria-hidden="true">×</span></button>
+                        </div>
+                      </div>
+                      <div aria-hidden="true" tabindex="-1" id="w-node-_98cac791-b2d5-5e94-b93f-faea8b4e9a6c-1aff368c"
+                        class="modal-close-area"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pro" class="faq1_accordion">
+          <div data-w-id="900e0b77-900c-cac8-d53e-355a4a7d2a37" class="faq1_question">
+            <h3 class="accordian_trigger-title text-gradient-blue">Pro</h3>
+            <div class="faq1_icon-wrapper pro">
+              <div class="icon-embed-small w-embed"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_414_1595)">
+                    <path d="M16 22L6 12L7.4 10.6L16 19.2L24.6 10.6L26 12L16 22Z" fill="white"></path>
+                  </g>
+                  <defs>
+                    <clippath id="clip0_414_1595">
+                      <rect width="32" height="32" fill="white" transform="matrix(0 1 -1 0 32 0)"></rect>
+                    </clippath>
+                  </defs>
+                </svg></div>
+            </div>
+          </div>
+          <div class="faq1_answer pro" style="width: 100%; height: 0px;">
+            <div class="margin-bottom margin-small">
+              <div role="region" class="accordian_content">
+                <div class="accordian_content-spacer">
+                  <div>
+                    <p class="text-14 text-white">Te prepararás para obtener un empleo como Desarrollador Web
+                      profesional.</p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-14 text-regular text-white">Empleabilidad:</p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-10-400 text-gradient-blue">●</p>
+                    <p class="text-14 text-regular text-white">Búsqueda de empleo personalizada con partners de
+                      Coneable.</p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-10-400 text-gradient-blue">●</p>
+                    <p class="text-14 text-regular text-white">Asesoramiento en negociaciones para mejorar tu salario.
+                    </p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-10-400 text-gradient-blue">●</p>
+                    <p class="text-14 text-regular text-white">Coaching profesional para maximizar oportunidades
+                      laborales.</p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-14 text-regular text-white">Tecnologías:</p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-10-400 text-gradient-blue">●</p>
+                    <p class="text-14 text-regular text-white">Meta-frameworks de desarrollo web con React (Next.js)</p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-10-400 text-gradient-blue">●</p>
+                    <p class="text-14 text-regular text-white">Backend as a Service (Supabase, PlanetScale, etc.).</p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-10-400 text-gradient-blue">●</p>
+                    <p class="text-14 text-regular text-white">Integración y Entrega Continua con GitHub Actions
+                      (CI/CD).</p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-10-400 text-gradient-blue">●</p>
+                    <p class="text-14 text-white text-regular">Implementación de buenas prácticas de ciberseguridad.</p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-10-400 text-gradient-blue">●</p>
+                    <p class="text-14 text-regular text-white">Despliegue de aplicaciones en la nube como AWS.</p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-14 text-white text-regular">Conocimientos especializados:</p>
+                  </div>
+                  <div class="text-item">
+                    <p class="text-10-400 text-gradient-blue">●</p>
+                    <div class="div-block-42">
+                      <p class="text-14 text-regular text-white">Integración de Inteligencia Artificial.</p><img
+                        src="./assets/66edf898dcd7f48c95029a38_star-ia.svg" loading="lazy" alt="" class="image-3">
+                    </div>
+                  </div>
+                </div>
+                <div class="accordian_content-spacer-copy">
+                  <div class="caracteristicas">
+                    <p class="text-14 text-grey">Conocimiento previo: Advanced</p>
+                    <div class="div-block-32">
+                      <p class="text-14 text-grey">24 semanas. Lunes a viernes de 7pm a 9pm.</p>
+                    </div>
+                    <div class="div-block-33">
+                      <p class="text-14 text-grey text-regular">Pago único de US$2,800</p>
+                      <div class="tooltip _2"><img class="link" src="./assets/665955a4e7a0c43298a161e5_icon-info.svg"
+                          alt="" data-tippy-content="Opciones de financiamiento disponibles"
+                          data-tippy-followcursor="false" data-tippy-interactive="false" data-tippy-placement="top"
+                          loading="lazy" data-tippy-arrow="true"></div>
+                    </div>
+                  </div>
+                  <div class="div-block-21"><a id="pro_btn" href="#"
+                      class="button button-oultine btn-18 w-button">Contáctanos</a>
+                    <div aria-labelledby="Popup Modal" role="dialog" aria-modal="true" class="modal-wrapper">
+                      <div id="w-node-_900e0b77-900c-cac8-d53e-355a4a7d2a85-1aff368c" class="modal-container">
+                        <div class="card-body">
+                          <div class="text-40">Despega tu carrera<br><span class="text-gradient-blue">hoy.</span></div>
+                          <div class="div-block-22">
+                            <div class="w-form">
+                              <form id="wf-form-form" name="wf-form-form" data-name="form" method="get" class="form"
+                                data-wf-page-id="665691d17f7f5d3d1aff368c"
+                                data-wf-element-id="d84e08ce-b775-ea64-2be4-99a8eaa1e03e" aria-label="form">
+                                <div class="input"><label for="name-2" class="text-label">Nombre y
+                                    apellido</label><input class="form-control w-input" maxlength="256" name="name-2"
+                                    data-name="Name 2" placeholder="" type="text" id="name-2" required=""></div>
+                                <div class="input"><label for="email-3" class="text-label">Correo</label><input
+                                    class="form-control w-input" maxlength="256" name="email-3" data-name="Email 3"
+                                    placeholder="" type="email" id="email-3" required=""></div>
+                                <div class="input"><label for="country-3" class="text-label">País</label><select
+                                    id="country-3" name="country-3" data-name="Country 3" required=""
+                                    class="select w-select">
+                                    <option value="Perú">Perú</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Argentina">Argentina</option>
+                                  </select></div>
+                                <div class="input"><label for="phone-2" class="text-label">Número de
+                                    teléfono</label><input class="form-control w-input" maxlength="256" name="phone-2"
+                                    data-name="Phone 2" placeholder="" type="tel" id="phone-2" required=""></div>
+                                <div class="input"><label for="programs-3" class="text-label">Programa de tu
+                                    interés</label><select id="programs-3" name="programs" data-name="programs"
+                                    required="" class="select w-select">
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="Pre Coneable">Pre Coneable</option>
+                                    <option value="Fundamentals">Fundamentals</option>
+                                    <option value="Advanced">Advanced</option>
+                                    <option value="Pro">Pro</option>
+                                  </select></div>
+                                <div class="div-block-23"><label class="w-checkbox">
+                                    <div class="w-checkbox-input w-checkbox-input--inputType-custom"></div><input
+                                      type="checkbox" id="checkbox-3" name="checkbox-3" data-name="Checkbox 3"
+                                      style="opacity:0;position:absolute;z-index:-1"><span
+                                      class="text-1 text-white w-form-label" for="checkbox-3">Acepto los términos,
+                                      condiciones y política de privacidad <span
+                                        class="text-gradient-blue">*</span></span>
+                                  </label><label class="w-checkbox">
+                                    <div class="w-checkbox-input w-checkbox-input--inputType-custom"></div><input
+                                      type="checkbox" id="checkbox-2" name="checkbox-2" data-name="Checkbox 2"
+                                      style="opacity:0;position:absolute;z-index:-1"><span
+                                      class="text-1 text-white w-form-label" for="checkbox-2">Acepto recibir información
+                                      sobre Coneable</span>
+                                  </label></div><input type="submit" data-wait="Enviando..." class="button w-button"
+                                  value="Enviar">
+                              </form>
+                              <div class="insert-success-text w-form-done" tabindex="-1" role="region"
+                                aria-label="form success">
+                                <div class="text-24">Formulario enviado con éxito</div>
+                              </div>
+                              <div class="error-message w-form-fail" tabindex="-1" role="region"
+                                aria-label="form failure">
+                                <div class="text-block-3">Confirma que todos los campos estén completos</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-w-id="900e0b77-900c-cac8-d53e-355a4a7d2a87" class="modal-close_wrapper w-embed"><svg
+                            width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_692_26)">
+                              <path
+                                d="M17.4141 16L26 7.4141L24.5859 6L16 14.5859L7.4143 6L6 7.4141L14.5859 16L6 24.5859L7.4143 26L16 17.4141L24.5859 26L26 24.5859L17.4141 16Z"
+                                fill="white"></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_692_26">
+                                <rect width="32" height="32" fill="white"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></div>
+                      </div>
+                      <div aria-hidden="true" tabindex="-1" id="w-node-_900e0b77-900c-cac8-d53e-355a4a7d2a88-1aff368c"
+                        class="modal-close-area"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="single-player-example" class="section-audios">
+    <div class="div-block-47">
+      <div class="text-subtitle">Nuestra comunidad<br><span class="text-gradient-blue">representa nuestra visión</span>
+      </div>
+      <div class="div-block-56">
+        <div class="div-block-60">
+          <div class="div-block-58"><img src="./assets/676db52e79d9f41ff8dfa01b_1721665378119.jpeg" loading="lazy"
+              alt="" sizes="(max-width: 767px) 64px, 118px"
+              srcset="https://cdn.prod.website-files.com/665691d17f7f5d3d1aff367a/676db52e79d9f41ff8dfa01b_1721665378119-p-500.jpeg 500w, https://cdn.prod.website-files.com/665691d17f7f5d3d1aff367a/676db52e79d9f41ff8dfa01b_1721665378119.jpeg 800w"
+              class="sp-thumbnail">
+            <div class="div-block-59">
+              <div class="text-1">
+                <div class="text-14 text-white text-regular">"Gracias a Coneable, hoy soy parte de la comunidad tech que
+                  siempre quise unirme. Sus enseñanzas técnicas, de trabajo en equipo y apoyo en empleabilidad me han
+                  permitido crecer profesionalmente y unirme a una empresa en el extranjero."</div>
+              </div>
+              <div class="div-block-40">
+                <div class="sp-title">Tatiana Arias</div>
+                <div class="text-14 text-grey text-regular">Shopify Developer en Step Labs</div>
+                <div class="sp-title text-regular text-gradient-blue">Coneable 2024</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div-block-60">
+          <div class="div-block-58"><img src="./assets/676db5582cbdfa00bb46dfa7_1722209234794.jpeg" loading="lazy"
+              alt="" sizes="(max-width: 767px) 64px, 118px"
+              srcset="https://cdn.prod.website-files.com/665691d17f7f5d3d1aff367a/676db5582cbdfa00bb46dfa7_1722209234794-p-500.jpeg 500w, https://cdn.prod.website-files.com/665691d17f7f5d3d1aff367a/676db5582cbdfa00bb46dfa7_1722209234794.jpeg 800w"
+              class="sp-thumbnail">
+            <div class="div-block-59">
+              <div class="text-1">
+                <div class="text-14 text-white text-regular">“Antes de Coneable era un Desarrollador Freelance sin
+                  estructura y el programa me ofreció un aprendizaje part-time basado en proyectos y usando las
+                  tecnologías más demandadas. Hoy, soy parte de {c} Labs, construyendo una aplicación web basada en
+                  Inteligencia Artificial.”</div>
+              </div>
+              <div class="div-block-40">
+                <div class="sp-title">Daniel Avalos</div>
+                <div class="text-14 text-grey text-regular">Software Developer en {c} Labs</div>
+                <div class="sp-title text-regular text-gradient-blue">Coneable 2024</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div-block-60">
+          <div class="div-block-58"><img src="./assets/676db590df366a17dff34f74_1673496685863.jpeg" loading="lazy"
+              alt="" sizes="(max-width: 767px) 64px, 118px"
+              srcset="https://cdn.prod.website-files.com/665691d17f7f5d3d1aff367a/676db590df366a17dff34f74_1673496685863-p-500.jpeg 500w, https://cdn.prod.website-files.com/665691d17f7f5d3d1aff367a/676db590df366a17dff34f74_1673496685863.jpeg 560w"
+              class="sp-thumbnail">
+            <div class="div-block-59">
+              <div class="text-1">
+                <div class="text-14 text-white text-regular">“Coneable me preparó no solo a nivel técnico, sino también
+                  a brindarme un enfoque práctico con proyectos reales que potenciaron mi confianza. Me ofreció también
+                  grandes oportunidades para impulsar mi carrera, cómo lo es trabajar en {c} Labs, creando un producto
+                  desde cero.”</div>
+              </div>
+              <div class="div-block-40">
+                <div class="sp-title">Angélica Arias</div>
+                <div class="text-14 text-grey text-regular">Software Developer en {c} Labs</div>
+                <div class="sp-title text-regular text-gradient-blue">Coneable 2024</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div-block-60">
+          <div class="div-block-58"><img src="./assets/667b0443089f6669eef7b3fd_image 54.png" loading="lazy" alt=""
+              sizes="(max-width: 767px) 64px, 118px"
+              srcset="https://cdn.prod.website-files.com/665691d17f7f5d3d1aff367a/667b0443089f6669eef7b3fd_image%2054-p-500.png 500w, https://cdn.prod.website-files.com/665691d17f7f5d3d1aff367a/667b0443089f6669eef7b3fd_image%2054.png 800w"
+              class="sp-thumbnail">
+            <div class="div-block-59">
+              <div class="text-1">
+                <div class="text-14 text-white text-regular">“Coneable me acostumbró a trabajar a un ritmo de equipo de
+                  ingeniería de alto rendimiento. Complementé los fundamentos universitarios con tecnologías y
+                  frameworks actuales, adaptándome al entorno laboral real.”</div>
+              </div>
+              <div class="div-block-40">
+                <div class="sp-title">Kevin Robles</div>
+                <div class="text-14 text-grey text-regular">Software Engineer en Truora</div>
+                <div class="sp-title text-regular text-gradient-blue">Coneable 2023</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div-block-60">
+          <div class="div-block-58"><img src="./assets/667b04af2c3454949bc87503_image 56.png" loading="lazy" alt=""
+              sizes="(max-width: 767px) 64px, 118px"
+              srcset="https://cdn.prod.website-files.com/665691d17f7f5d3d1aff367a/667b04af2c3454949bc87503_image%2056-p-500.png 500w, https://cdn.prod.website-files.com/665691d17f7f5d3d1aff367a/667b04af2c3454949bc87503_image%2056.png 800w"
+              class="sp-thumbnail">
+            <div class="div-block-59">
+              <div class="text-1">
+                <div class="text-14 text-white text-regular">“Mi transición de Abogado a Programador fue posible gracias
+                  a Coneable. La experiencia allí fue una maleta de conocimientos invaluables que transformaron mi
+                  carrera profesional.”</div>
+              </div>
+              <div class="div-block-40">
+                <div class="sp-title">César Martínez</div>
+                <div class="text-14 text-grey text-regular">Salesforce Developer en NTT DATA</div>
+                <div class="sp-title text-regular text-gradient-blue">Coneable 2022</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div-block-60">
+          <div class="div-block-58"><img src="./assets/667b048fc24902a06647d259_image 55.png" loading="lazy" alt=""
+              sizes="(max-width: 767px) 64px, 118px"
+              srcset="https://cdn.prod.website-files.com/665691d17f7f5d3d1aff367a/667b048fc24902a06647d259_image%2055-p-500.png 500w, https://cdn.prod.website-files.com/665691d17f7f5d3d1aff367a/667b048fc24902a06647d259_image%2055.png 800w"
+              class="sp-thumbnail">
+            <div class="div-block-59">
+              <div class="text-1">
+                <div class="text-14 text-white text-regular">“Comencé en Coneable como Back-End Developer y me gradué
+                  como Full-Stack. El feedback constante y la interacción con empresas reales me prepararon para
+                  enfrentar el mercado laboral.”</div>
+              </div>
+              <div class="div-block-40">
+                <div class="sp-title">Allison Velarde</div>
+                <div class="text-14 text-grey text-regular">Software Engineer en OKA</div>
+                <div class="sp-title text-regular text-gradient-blue">Coneable 2022</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div-block-60">
+          <div class="div-block-58"><img src="./assets/667b04cac0a82973e09af9de_image 57.png" loading="lazy" alt=""
+              sizes="(max-width: 767px) 64px, 118px"
+              srcset="https://cdn.prod.website-files.com/665691d17f7f5d3d1aff367a/667b04cac0a82973e09af9de_image%2057-p-500.png 500w, https://cdn.prod.website-files.com/665691d17f7f5d3d1aff367a/667b04cac0a82973e09af9de_image%2057.png 800w"
+              class="sp-thumbnail">
+            <div class="div-block-59">
+              <div class="text-1">
+                <div class="text-14 text-white text-regular">"Tras 15 años de carrera ascendente, Coneable fue decisivo
+                  para cambiar mi rumbo. Me brindó una experiencia real y el conocimiento técnico necesario para
+                  triunfar como Software Developer."</div>
+              </div>
+              <div class="div-block-40">
+                <div class="sp-title">Javier Pacheco</div>
+                <div class="text-14 text-grey text-regular">Angular Developer en Outcode</div>
+                <div class="sp-title text-regular text-gradient-blue">Coneable 2021</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div-block-60">
+          <div class="div-block-58"><img src="./assets/667b04fd38dd901f65ea2f10_image 59.png" loading="lazy" alt=""
+              sizes="(max-width: 767px) 64px, 118px"
+              srcset="https://cdn.prod.website-files.com/665691d17f7f5d3d1aff367a/667b04fd38dd901f65ea2f10_image%2059-p-500.png 500w, https://cdn.prod.website-files.com/665691d17f7f5d3d1aff367a/667b04fd38dd901f65ea2f10_image%2059.png 800w"
+              class="sp-thumbnail">
+            <div class="div-block-59">
+              <div class="text-1">
+                <div class="text-14 text-white text-regular">“Coneable me entregó un kit de herramientas completo; no
+                  solo desarrollé habilidades técnicas, sino que también aprendí a ser resiliente, autodidacta y a pedir
+                  ayuda cuando necesario.”</div>
+              </div>
+              <div class="div-block-40">
+                <div class="sp-title">Grecia Delgado</div>
+                <div class="text-14 text-grey text-regular">Software Engineer II en Xepelin</div>
+                <div class="sp-title text-regular text-gradient-blue">Coneable 2020</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div-block-60">
+          <div class="div-block-58"><img src="./assets/667b04e35ee2d4a9e01a8b31_image 58.png" loading="lazy" alt=""
+              sizes="(max-width: 767px) 64px, 118px"
+              srcset="https://cdn.prod.website-files.com/665691d17f7f5d3d1aff367a/667b04e35ee2d4a9e01a8b31_image%2058-p-500.png 500w, https://cdn.prod.website-files.com/665691d17f7f5d3d1aff367a/667b04e35ee2d4a9e01a8b31_image%2058.png 800w"
+              class="sp-thumbnail">
+            <div class="div-block-59">
+              <div class="text-1">
+                <div class="text-14 text-white text-regular">"Coneable cambió mi vida. Ingresé sabiendo poco de código
+                  y, a pesar de las dificultades iniciales, la comunidad me apoyó en cada paso, haciendo el camino más
+                  llevadero."</div>
+              </div>
+              <div class="div-block-40">
+                <div class="sp-title">Andrea Miranda</div>
+                <div class="text-14 text-grey text-regular">Software Engineer en Buk</div>
+                <div class="sp-title text-regular text-gradient-blue">Coneable 2020</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div-block-56"></div>
+    </div>
+  </section>
+  <section class="section-empresas">
+    <div data-w-id="c6a71e82-f736-3537-b95c-0678cd1604bf"
+      style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+      class="container-logos">
+      <div class="div-block-7">
+        <div class="text-subtitle">Únete a los que desarrollan<br> <span class="text-gradient-blue">el futuro de cientos
+            de empresas</span></div>
+      </div>
+      <div class="div-block-63">
+        <div class="container-logos-1">
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae2940f963f78ad34ac8e_aimo.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae2944f57a8edcd7e974d_Alegra.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29451b2e5df39c361ac_Alicorp.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae2943b536fc063fb04b4_amigocloud.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae295d1011dea8daaa985_Applaudo.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae294f029c3d2d652d6b1_Apurata.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29415712b98d4a88a05_attach.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae2947122bdee2334cb95_bancom.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae2969833f70f6391908b_Biobridge.png" loading="lazy" alt="" class="image-copy">
+          </div>
+        </div>
+        <div class="container-logos-2">
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29656e6b063a6c62b2a_Bitmex.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae2962b7a3319c9495191_bsale.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae296c287f5fd1732f5ad_Caja Trujillo.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29657dec8668c20e15b_canvia.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29623f9d70a7b3059ac_carelinx.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae297a4505562111ce76b_chipax.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29728df8c0df80cd9d4_cineplanet.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae297648d6f778b778ebb_cometa.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae2974428b1f2bc6394b6_Crack the Code.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae2985f0eec1c6da19706_Culqi.png" loading="lazy" alt="" class="image-copy"></div>
+        </div>
+        <div class="container-logos-3">
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae2984f57a8edcd7e9a3e_Delfosti.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae2984ecd529d92f24c7b_draftea.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29808c0e0ae4149c63e_deuna.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae299a9c65300795edfa4_easybroker.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae2994e3ca2c34c5c583c_ebombo.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae299a183241abc85a1e8_El Comercio.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae299a9c65300795ee079_encora.png" loading="lazy" alt="" class="image-copy"></div>
+        </div>
+        <div class="container-logos-4">
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29a1e1cdd6235448f2e_finvoice.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29a1e381ed06509dec1_fitco.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29a331e0aca0268c19b_Footloose.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29af9139f1294dd18b6_gob.pe.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29a4f57a8edcd7e9afe_IDBI.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29b7b7d62d71ffc032a_Jalasoft.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29b7b7d62d71ffc032a_Jalasoft.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29ca7e503b03a134757_Kambista.png" loading="lazy" alt="" class="image-copy">
+          </div>
+        </div>
+        <div class="container-logos-5">
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29c56e6b063a6c62e19_kashio.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29c6f6b68102b12f8b3_kururo  (trudan).png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29ca32c0173430e24d3_lemontech.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29c8849f7c1e6fce099_Lilab.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29da60c8737f3a2c712_netlogistik.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29c7f3a966ff3769f23_oka.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29d9cc3dfcb0db5c39c_OpenLoop.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29e1b316acd31a4b4ca_outcode.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29eeea13e7327993722_rankmi.png" loading="lazy" alt="" class="image-copy"></div>
+        </div>
+        <div class="container-logos-6">
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29e4ecd529d92f24ef8_ravn.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29e63f0f024b72894b8_Readiness IT.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29e5db8a790c5bb334c_reservamos.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29fe15939c092887641_ridepanda.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29f0a5b524aa22cbe33_samishop.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29f7f3a966ff376a0f1_shine solar.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29fd1011dea8daaafd0_simpliroute.png" loading="lazy" alt="" class="image-copy">
+          </div>
+        </div>
+        <div class="container-logos-7">
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29f26b1d39f3da91b93_Tekton Labs.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29f28df8c0df80cdce7_tismart.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29f3eb2b829778dcb5d_turismo i.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29f7f3a966ff376a165_vauxoo.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae2a0b2a83321e77f4721_visma.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae2a0ec24f85cb29b2588_webdox.png" loading="lazy" alt="" class="image-copy"></div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae2a11e1cdd62354492f3_Xepelin.png" loading="lazy" alt="" class="image-copy">
+          </div>
+          <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+              src="./assets/667ae29f4428b1f2bc63993a_Tenpo.png" loading="lazy" alt="" class="image-copy"></div>
+        </div>
+      </div>
+      <div class="div-block-63 mobile">
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae2940f963f78ad34ac8e_aimo.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae2944f57a8edcd7e974d_Alegra.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29451b2e5df39c361ac_Alicorp.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae2943b536fc063fb04b4_amigocloud.png" loading="lazy" alt="" class="image-copy">
+        </div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae295d1011dea8daaa985_Applaudo.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae294f029c3d2d652d6b1_Apurata.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29415712b98d4a88a05_attach.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae2947122bdee2334cb95_bancom.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae2969833f70f6391908b_Biobridge.png" loading="lazy" alt="" class="image-copy">
+        </div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29656e6b063a6c62b2a_Bitmex.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae2962b7a3319c9495191_bsale.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae296c287f5fd1732f5ad_Caja Trujillo.png" loading="lazy" alt="" class="image-copy">
+        </div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29657dec8668c20e15b_canvia.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29623f9d70a7b3059ac_carelinx.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae297a4505562111ce76b_chipax.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29728df8c0df80cd9d4_cineplanet.png" loading="lazy" alt="" class="image-copy">
+        </div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae297648d6f778b778ebb_cometa.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae2974428b1f2bc6394b6_Crack the Code.png" loading="lazy" alt="" class="image-copy">
+        </div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae2985f0eec1c6da19706_Culqi.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae2984f57a8edcd7e9a3e_Delfosti.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae2984ecd529d92f24c7b_draftea.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29808c0e0ae4149c63e_deuna.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae299a9c65300795edfa4_easybroker.png" loading="lazy" alt="" class="image-copy">
+        </div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae2994e3ca2c34c5c583c_ebombo.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae299a183241abc85a1e8_El Comercio.png" loading="lazy" alt="" class="image-copy">
+        </div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae299a9c65300795ee079_encora.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29a1e1cdd6235448f2e_finvoice.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29a1e381ed06509dec1_fitco.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29a331e0aca0268c19b_Footloose.png" loading="lazy" alt="" class="image-copy">
+        </div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29af9139f1294dd18b6_gob.pe.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29a4f57a8edcd7e9afe_IDBI.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29b7b7d62d71ffc032a_Jalasoft.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29b7b7d62d71ffc032a_Jalasoft.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29ca7e503b03a134757_Kambista.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29c56e6b063a6c62e19_kashio.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29c6f6b68102b12f8b3_kururo  (trudan).png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29ca32c0173430e24d3_lemontech.png" loading="lazy" alt="" class="image-copy">
+        </div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29c8849f7c1e6fce099_Lilab.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29da60c8737f3a2c712_netlogistik.png" loading="lazy" alt="" class="image-copy">
+        </div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29c7f3a966ff3769f23_oka.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29d9cc3dfcb0db5c39c_OpenLoop.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29e1b316acd31a4b4ca_outcode.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29eeea13e7327993722_rankmi.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29e4ecd529d92f24ef8_ravn.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29e63f0f024b72894b8_Readiness IT.png" loading="lazy" alt="" class="image-copy">
+        </div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29e5db8a790c5bb334c_reservamos.png" loading="lazy" alt="" class="image-copy">
+        </div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29fe15939c092887641_ridepanda.png" loading="lazy" alt="" class="image-copy">
+        </div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29f0a5b524aa22cbe33_samishop.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29f7f3a966ff376a0f1_shine solar.png" loading="lazy" alt="" class="image-copy">
+        </div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29fd1011dea8daaafd0_simpliroute.png" loading="lazy" alt="" class="image-copy">
+        </div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29f26b1d39f3da91b93_Tekton Labs.png" loading="lazy" alt="" class="image-copy">
+        </div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29f28df8c0df80cdce7_tismart.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29f3eb2b829778dcb5d_turismo i.png" loading="lazy" alt="" class="image-copy">
+        </div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29f7f3a966ff376a165_vauxoo.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae2a0b2a83321e77f4721_visma.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae2a0ec24f85cb29b2588_webdox.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae2a11e1cdd62354492f3_Xepelin.png" loading="lazy" alt="" class="image-copy"></div>
+        <div id="w-node-_5a360fdb-82c9-488b-005a-31f814ce5507-14ce5507" class="div-block-4-copy"><img
+            src="./assets/667ae29f4428b1f2bc63993a_Tenpo.png" loading="lazy" alt="" class="image-copy"></div>
+      </div>
+    </div>
+  </section>
+  <section class="section-cta">
+    <div class="code-embed-3 w-embed">
+      <style>
+        /* Google Fonts */
+        @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+        /*
+.line-4, .line-5 {
+  position: relative;
+  margin: 0 auto;
+  border-right: 2px solid transparent;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Animation */
+        /*
+.anim-typewriter-4 {
+  animation: typewriter-4 2s steps(38) 0.5s 1 normal both,
+             blinkTextCursor-4 0.75s step-end 0.5s 3 normal,
+             blinkTextCursorEnd-4 0.75s step-end 2.5s 1 normal forwards;
+}
+
+.anim-typewriter-5 {
+  animation: typewriter-5 1.2s steps(20) 2.75s 1 normal both,
+             blinkTextCursor-5 0.75s step-end 2.75s 2 normal,
+             blinkTextCursorEnd-5 0.75s step-end 3.95s 1 normal forwards;
+}
+
+@keyframes typewriter-4 {
+  from { width: 0; }
+  to { width: 16em; }
+}
+
+@keyframes typewriter-5 {
+  from { width: 0; }
+  to { width: 11em; }
+}
+
+@keyframes blinkTextCursor-4 {
+  0%, 100% { border-right-color: transparent; }
+  50% { border-right-color: rgba(255,255,255,.75); }
+}
+
+@keyframes blinkTextCursor-5 {
+  0%, 100% { border-right-color: transparent; }
+  50% { border-right-color: rgba(255,255,255,.75); }
+}
+
+@keyframes blinkTextCursorEnd-4 {
+  0% { border-right-color: rgba(255,255,255,.75); }
+  100% { border-right-color: transparent; }
+}
+
+@keyframes blinkTextCursorEnd-5 {
+  0% { border-right-color: rgba(255,255,255,.75); }
+  100% { border-right-color: transparent; }
+}
+*/
+      </style>
+    </div>
+    <div id="cta-text-block" class="div-block-2-copy w-node-_1d9302be-da38-77f2-9dad-34081b8df2c5-1aff368c">
+      <div class="container-text">
+        <div class="container-desktop">
+          <div class="text-title line-4"><span class="anim-typewriter-4">Despega tu carrera en desarrollo de</span>
+          </div>
+          <div class="text-title line-5"><span class="anim-typewriter-5">software con Coneable</span></div>
+        </div>
+        <div class="container-mobile">
+          <div class="text-title">Despega tu carrera en desarrollo de software con Coneable</div>
+          <div class="text-title"></div>
+        </div>
+        <div class="container-button"><a href="#" class="button button-oultine w-button">Empezar postulación</a>
+          <div aria-labelledby="Popup Modal" role="dialog" aria-modal="true" class="modal-wrapper">
+            <div id="w-node-_1651a713-c33a-4169-30c3-538d97ba9828-1aff368c" class="modal-container">
+              <div class="card-body">
+                <div class="text-40">Despega tu carrera<br><span class="text-gradient-blue">hoy.</span></div>
+                <div class="div-block-22">
+                  <div class="w-form">
+                    <form id="wf-form-form" name="wf-form-form" data-name="form" method="get" class="form"
+                      data-wf-page-id="665691d17f7f5d3d1aff368c"
+                      data-wf-element-id="d84e08ce-b775-ea64-2be4-99a8eaa1e03e" aria-label="form">
+                      <div class="input"><label for="name-2" class="text-label">Nombre y apellido</label><input
+                          class="form-control w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder=""
+                          type="text" id="name-2" required=""></div>
+                      <div class="input"><label for="email-3" class="text-label">Correo</label><input
+                          class="form-control w-input" maxlength="256" name="email-3" data-name="Email 3" placeholder=""
+                          type="email" id="email-3" required=""></div>
+                      <div class="input"><label for="country-3" class="text-label">País</label><select id="country-3"
+                          name="country-3" data-name="Country 3" required="" class="select w-select">
+                          <option value="Perú">Perú</option>
+                          <option value="Colombia">Colombia</option>
+                          <option value="Argentina">Argentina</option>
+                        </select></div>
+                      <div class="input"><label for="phone-2" class="text-label">Número de teléfono</label><input
+                          class="form-control w-input" maxlength="256" name="phone-2" data-name="Phone 2" placeholder=""
+                          type="tel" id="phone-2" required=""></div>
+                      <div class="input"><label for="programs-3" class="text-label">Programa de tu
+                          interés</label><select id="programs-3" name="programs" data-name="programs" required=""
+                          class="select w-select">
+                          <option value="">Selecciona una opción</option>
+                          <option value="Pre Coneable">Pre Coneable</option>
+                          <option value="Fundamentals">Fundamentals</option>
+                          <option value="Advanced">Advanced</option>
+                          <option value="Pro">Pro</option>
+                        </select></div>
+                      <div class="div-block-23"><label class="w-checkbox">
+                          <div class="w-checkbox-input w-checkbox-input--inputType-custom"></div><input type="checkbox"
+                            id="checkbox-3" name="checkbox-3" data-name="Checkbox 3"
+                            style="opacity:0;position:absolute;z-index:-1"><span class="text-1 text-white w-form-label"
+                            for="checkbox-3">Acepto los términos, condiciones y política de privacidad <span
+                              class="text-gradient-blue">*</span></span>
+                        </label><label class="w-checkbox">
+                          <div class="w-checkbox-input w-checkbox-input--inputType-custom"></div><input type="checkbox"
+                            id="checkbox-2" name="checkbox-2" data-name="Checkbox 2"
+                            style="opacity:0;position:absolute;z-index:-1"><span class="text-1 text-white w-form-label"
+                            for="checkbox-2">Acepto recibir información sobre Coneable</span>
+                        </label></div><input type="submit" data-wait="Enviando..." class="button w-button"
+                        value="Enviar">
+                    </form>
+                    <div class="insert-success-text w-form-done" tabindex="-1" role="region" aria-label="form success">
+                      <div class="text-24">Formulario enviado con éxito</div>
+                    </div>
+                    <div class="error-message w-form-fail" tabindex="-1" role="region" aria-label="form failure">
+                      <div class="text-block-3">Confirma que todos los campos estén completos</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-w-id="1651a713-c33a-4169-30c3-538d97ba9830" class="modal-close_wrapper w-embed"><button
+                  type="button" aria-label="Close Modal" class="modal-close"><span aria-hidden="true">×</span></button>
+              </div>
+            </div>
+            <div aria-hidden="true" tabindex="-1" id="w-node-_1651a713-c33a-4169-30c3-538d97ba9831-1aff368c"
+              class="modal-close-area"></div>
+          </div>
+        </div>
+      </div>
+      <div class="w-embed">
+        <style>
+          .v5-quotemark-text {
+            text-indent: -0.45em;
+          }
+
+          @supports (hanging-punctuation: first) {
+            .v5-quotemark-text {
+              text-indent: 0;
+              hanging-punctuation: first;
+            }
+          }
+
+          .home_app-list-wrapper {
+            white-space: nowrap;
+            will-change: transform;
+            animation: marquee-horizontal 40s linear infinite;
+            /* manipulate the speed of the marquee by changing "40s" line above*/
+          }
+
+          .home_app-list-wrapper.is-right {
+            animation: marquee-horizontal-alt 40s linear infinite;
+          }
+
+          .home_app-list-wrapper.is-top {
+            animation: marquee-vertical 40s linear infinite;
+          }
+
+          @keyframes marquee-horizontal {
+            from {
+              transform: translateX(0);
+            }
+
+            to {
+              transform: translateX(50%);
+            }
+          }
+
+          @keyframes marquee-horizontal-alt {
+            from {
+              transform: translateX(0);
+            }
+
+            to {
+              transform: translateX(-50%);
+            }
+          }
+
+          @keyframes marquee-vertical {
+            from {
+              transform: translateY(0);
+            }
+
+            to {
+              transform: translateY(50%);
+            }
+          }
+
+          .home_app-list-wrapper-left {
+            white-space: nowrap;
+            will-change: transform;
+            animation: marquee-horizontal-alt-left 40s linear infinite;
+            /* manipulate the speed of the marquee by changing "40s" line above*/
+          }
+
+          .home_app-list-wrapper-left.is-left {
+            animation: marquee-horizontal-alt-left 40s linear infinite;
+          }
+
+          @keyframes marquee-horizontal-alt-left {
+            from {
+              transform: translateX(50%);
+            }
+
+            to {
+              transform: translateX(0%);
+            }
+          }
+
+          .v5-banner-bar:hover>.v2-icon--24,
+          .v5-btn.is-icon:hover>.v2-icon--24,
+          .job_link:hover>.v2-icon--24 {
+            transform: translate(4px);
+          }
+
+          @media only screen and (max-width: 768px) {
+            .homepage_logo-wrapper {
+              animation: marquee-horizontal-alt 20s linear infinite;
+            }
+          }
+        </style>
+      </div>
+    </div>
+    <div id="w-node-cba47d4d-c9f9-6a45-06af-29fd96842286-1aff368c" class="home_app-component-left-down">
+      <div class="home_app-list-wrapper-left-copy">
+        <div class="home_app-list-left">
+          <div id="dec-text-wrapper-4" class="home_app-icon-wrapper-left-2 opacity-50" style="opacity: 1;">
+            <div class="div-block-62">
+              <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                  class="typewriter-text">section class="hero"&gt;</span></div>
+              <div class="div-block-62">
+                <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                    class="typewriter-text">img src="hero-image.jpg" alt="Innovación en salud y finanzas con</span>
+                </div>
+              </div>
+            </div>
+            <div class="paragraph"><span class="typewriter-text">Coneable"&gt;</span></div>
+            <div class="div-block-62">
+              <div class="div-block-62">
+                <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                    class="typewriter-text">button onclick="learnMore()"&gt;Aprende más</span></div>
+              </div>
+              <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                  class="typewriter-text">/section&gt;</span></div>
+            </div>
+            <div class="div-block-62">
+              <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                  class="typewriter-text">section class="about"&gt;</span></div>
+              <div class="div-block-62">
+                <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                    class="typewriter-text">h2&gt;Sobre Nuestra Misión</span></div>
+                <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                    class="typewriter-text">p&gt;En Coneable, colaboramos con innovadores, pensadores y</span></div>
+              </div>
+            </div>
+            <div class="paragraph"><span class="typewriter-text">hacedores en todo el mundo para traer cambios
+                sostenibles a los problemas</span></div>
+            <div class="paragraph"><span class="typewriter-text">más apremiantes de nuestro tiempo en el sector de salud
+                y finanzas.<p></p></span></div>
+            <div class="div-block-62">
+              <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                  class="typewriter-text">/section&gt;</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div-block-28"></div>
+    </div>
+    <div id="w-node-_5721b800-80fb-229a-15e4-b3f4e9648c73-1aff368c" class="home_app-component-down opacity-50">
+      <div class="home_app-list-wrapper-copy">
+        <div class="home_app-list">
+          <div id="dec-text-wrapper-3" class="home_app-icon-wrapper" style="opacity: 1;">
+            <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                class="typewriter-text">!DOCTYPE html&gt;</span></div>
+            <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                class="typewriter-text">html lang="es"&gt;</span></div>
+            <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                class="typewriter-text">head&gt;</span></div>
+            <div class="div-block-62">
+              <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                  class="typewriter-text">meta charset="UTF-8"&gt;</span></div>
+              <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                  class="typewriter-text">meta name="viewport" content="width=device-width,
+                  initial-scale=1.0"&gt;</span></div>
+              <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                  class="typewriter-text">title&gt;Coneable</span></div>
+              <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                  class="typewriter-text">link rel="stylesheet" href="styles.css"&gt;</span></div>
+            </div>
+            <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                class="typewriter-text">/head&gt;</span></div>
+            <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                class="typewriter-text">body&gt;</span></div>
+            <div class="div-block-62">
+              <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                  class="typewriter-text">header&gt;</span></div>
+              <div class="div-block-62">
+                <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                    class="typewriter-text">h1&gt;Coneable: Cambiando el Mundo de la Salud y Finanzas</span></div>
+                <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                    class="typewriter-text">p&gt;Únete a nuestro viaje para hacer la diferencia en el sector de la salud
+                    y las finanzas.<p></p></span></div>
+              </div>
+              <div class="paragraph"><span class="typewriter-bracket" style="opacity: 1;">&lt;</span><span
+                  class="typewriter-text">header&gt;</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div-block-24-copy"></div>
+    </div>
+  </section>
+  <section class="footer">
+    <div class="div-block-17">
+      <div id="w-node-a140beda-7503-e96d-3eda-919609b3a028-09b3a026" class="div-block-18"><img
+          src="./assets/logo_coneable.png" loading="lazy" alt="" class="image-2">
+        <p class="text-14">© CONEABLE 2025</p>
+      </div>
+      <div id="w-node-a55fa390-e577-f610-e487-7fb768048338-09b3a026">
+        <div id="w-node-a140beda-7503-e96d-3eda-919609b3a02c-09b3a026" class="div-block-19">
+          <p class="text-link title">Sobre Coneable</p><a href="#" class="text-link">Trabaja en Coneable</a><a href="#"
+            class="text-link">Términos y condiciones</a><a href="#" class="text-link">Política de privacidad</a><a
+            href="#" class="text-link">Libro de
+            reclamaciones</a><a href="#" class="text-link">Política de cookies</a>
+        </div>
+      </div>
+      <div id="w-node-a140beda-7503-e96d-3eda-919609b3a037-09b3a026" class="div-block-19 top">
+        <p class="text-link title">Redes sociales</p><a href="#" class="text-link">LinkedIn</a><a href="#"
+          class="text-link">Facebook</a><a href="#" class="text-link">TikTok</a><a href="#" class="text-link">X</a><a
+          href="#" class="text-link">Instagram</a>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
